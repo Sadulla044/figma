@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p,
+        .content-box {
+            border: 2px darkviolet;
+            border-style: solid;
+            margin: 1em 0;
+            padding: 1.4em;
+            /* background: linear-gradient(60deg, red, yellow, red, yellow, red); */
+            background-image: url(./static/images/Screenshot\ from\ 2023-01-13\ 20-06-10.png);
+            font: 900 1.2em sans-serif;
+            transition: all 0.4s ease;
+            background-clip: content-box;
+            cursor: pointer;
+        }
+        .box {
+            width: 2rem;
+        }
+
+        p:hover {
+            transition: all 0.3s ease;
+            background-clip: border-box;
+        }
+
+        .border-box {
+            background-clip: border-box;
+        }
+        .padding-box {
+            background-clip: padding-box;
+        }
+        .content-box {
+            background-clip: content-box;
+        }
+
+        .text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: rgba(0, 0, 0, 0.2);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="content-box">
+        <div class="box">The background extends behind the border.</div>
+    </div>
+    <p class="padding-box">
+    The background extends to the inside edge of the border.
+    </p>
+    <p class="content-box">
+    The background extends only to the edge of the content box.
+    </p>
+    <p class="text">The background is clipped to the foreground text.</p>
+</body>
+</html>

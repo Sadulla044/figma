@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            position: relative;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-direction: row;
+            width: 300vw;
+            height: 100vh;
+            border: 1px solid black;
+        }
+
+        .box-1 {
+            margin-left: 10%;
+        }
+
+        .box {
+            position: relative;
+            width: 70px;
+            height: 200px;
+            border: 1px solid red;
+            background-color: #333;
+            opacity: 0.5;
+            transition: all 0.5s ease;
+            cursor: pointer;
+        }
+
+        .box:hover {
+            opacity: 1;
+            height: 220px;
+            width: 85px;
+        }
+
+        .container.active .box-1 {
+            margin-left: 10px;
+        }
+
+        .container.active .box {
+            width: 200px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box box-1"></div>
+        <div class="box box-2"></div>
+        <div class="box box-3"></div>
+        <div class="box box-4"></div>
+        <div class="box box-5"></div>
+        <div class="box box-6"></div>
+        <div class="box box-7"></div>
+        <div class="box box-8"></div>
+        <div class="box box-9"></div>
+        <div class="box box-10"></div>
+    </div>
+
+    <script>
+        const boxes = document.querySelectorAll('.box');
+        const container = document.querySelector('.container');
+
+        boxes.forEach(box => box.addEventListener('click', () => {
+            container.classList.add('active');
+        }))
+        boxes.forEach(box => document.addEventListener('scroll', () => {
+            container.classList.remove('active');
+        }))
+    </script>
+
+</body>
+</html>

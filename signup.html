@@ -4,121 +4,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./static/images/home/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="static/style/signup.css">
-    <title>Sign Up</title>
+    <title>Marico</title>
 </head>
 <body>
-    <!-- HEADER -->
-    <header class="header">
-        <div class="container">
-            <div class="header-logo">
-                <a href="#">
-                    <img src="./static/images/signup/logo.svg" alt="logo" class="logo" />
-                </a>
-            </div>
-            <div class="header-navbar">
-                <div class="wrapper">
-                    <ul class="navbar-items">
-                        <li class="use-cases navbar-item">Use Cases
-                            <span class="icon">
-                                <img src="./static/images/signup/down_arrow.svg" alt="down_arrow" class="arrow-icon">
-                            </span>
-                        </li>
-                        <li class="about navbar-item">About</li>
-                        <li class="pricing navbar-item active">Pricing</li>
-                        <li class="blog navbar-item">Blog</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="registration">
-                <div class="wrapper">
-                    <button class="btn-login">Login</button>
-                    <button class="btn-signup">Sign Up</button>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- MAIN -->
-    <main class="main">
-        <!-- MAIN SECTION -->
-        <section class="main__section">
-            <div class="content-title">
-                <h1 class="title">Sign Up</h1>
-                <p class="description">Fill all field for create an account.</p>
-            </div>
-            <div class="form">
-                <form action="" class="signup-form">
-                    <div class="form-left">
-                        <div class="username">
-                            <input type="text" name="" class="username-input" placeholder="Username" />
-                            <span class="icon">
-                                <img src="./static/images/signup/user.svg" alt="user-icon" class="user-icon" />
-                            </span>
-                        </div>
-                        <div class="password">
-                            <input type="password" name="" class="password-input" placeholder="Password" />
-                            <span class="icon" id="eye">
-                                <img src="./static/images/signup/eye-open.svg" alt="eye-icon" class="eye-icon open" />
-                                <img src="./static/images/signup/eye-close.svg" alt="eye-icon" class="eye-icon close active" />
-                            </span>
-                        </div>
-                    </div>
-                    <div class="form-right">
-                        <div class="email">
-                            <input type="email" name="" class="email-input" placeholder="Email" />
-                            <span class="icon">
-                                <img src="./static/images/signup/at_sign.svg" alt="user-icon" class="user-icon" />
-                            </span>
-                        </div>
-                        <div class="signup">
-                            <button class="signup-btn btn">Sign Up</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="clear-fix"></div>
+    <div class="root">
+        <!-- HEADER -->
+        <header class="header">
             <div class="container">
-                <div class="title">
-                    <h1 class="title-txt">Or</h1>
+                <div class="header-logo">
+                    <a href="#">
+                        <img src="./static/images/signup/logo.svg" alt="logo" class="logo" />
+                    </a>
                 </div>
-                <div class="subtitle">
-                    <h3 class="subtitle-txt">Sign up with...</h3>
+                <div class="header-navbar">
+                    <div class="wrapper">
+                        <ul class="navbar-items">
+                            <li class="use-cases navbar-item">Use Cases
+                                <span class="icon">
+                                    <img src="./static/images/signup/down_arrow.svg" alt="down_arrow" class="arrow-icon" />
+                                </span>
+                            </li>
+                            <li class="about navbar-item">About</li>
+                            <li class="pricing navbar-item">Pricing</li>
+                            <li class="blog navbar-item">Blog</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="social-networks">
-                    <div class="signup-with-facebook social-network">
-                        <div class="logo">
-                            <img src="./static/images/signup/facebook.svg" alt="facebook-logo" class="facebook-logo">
-                        </div>
-                        <div class="content">
-                            <h4 class="btn-txt">Sign up with Facebook</h4>
-                        </div>
+                <div class="registration">
+                    <div class="wrapper">
+                        <button class="btn-login">Login</button>
+                        <button class="btn-signup">Sign Up</button>
                     </div>
-                    <div class="signup-with-google social-network">
-                        <div class="logo">
-                            <img src="./static/images/signup/google.svg" alt="google-logo" class="google-logo">
-                        </div>
-                        <div class="content">
-                            <h4 class="btn-txt">Sign up with Google</h4>
-                        </div>
-                    </div>
-                    <div class="signup-with-apple social-network">
-                        <div class="logo">
-                            <img src="./static/images/signup/apple.svg" alt="apple-logo" class="apple-logo">
-                        </div>
-                        <div class="content">
-                            <h4 class="btn-txt">Sign up with Apple</h4>
-                        </div>
-                    </div>
+                </div>
+                <div class="burger-menu">
+                    <img src="./static/images/signup/burger-menu.svg" alt="burger-menu-icon" class="burger-menu-icon" />
                 </div>
             </div>
-            <div class="footer">
-                <p class="description">Already have an account? &nbsp Please <a href="#" class="link-to-login">Log in.</a></p>
-            </div>
-        </section>
-    </main>
+        </header>
 
-    <script src="./script.js"></script>
+        <!-- MAIN -->
+        <main class="main">
+            <!-- MAIN SECTION -->
+            <section class="main__section">
+                <div class="content-title">
+                    <h1 class="title">Sign Up</h1>
+                    <p class="description">Fill all fields for create an account.</p>
+                </div>
+                <div class="form">
+                    <form action="" class="signup-form">
+                        <div class="form-left">
+                            <div class="username">
+                                <input type="text" name="" class="username-input" placeholder="Full name" />
+                                <span class="icon">
+                                    <img src="./static/images/signup/user.svg" alt="user-icon" class="user-icon" />
+                                </span>
+                            </div>
+                            <div class="password">
+                                <input type="password" name="" class="password-input" placeholder="Password" />
+                                <span class="icon" id="eye">
+                                    <img src="./static/images/signup/eye-open.svg" alt="eye-icon" class="eye-icon open" />
+                                    <img src="./static/images/signup/eye-close.svg" alt="eye-icon" class="eye-icon close active" />
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-right">
+                            <div class="email">
+                                <input type="email" name="" class="email-input" placeholder="Email" />
+                                <span class="icon">
+                                    <img src="./static/images/signup/at_sign.svg" alt="user-icon" class="user-icon" />
+                                </span>
+                            </div>
+                            <div class="signup">
+                                <button class="signup-btn btn">Sign Up</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="clear-fix"></div>
+                <div class="container">
+                    <div class="title">
+                        <h1 class="title-txt">Or</h1>
+                    </div>
+                    <div class="subtitle">
+                        <h3 class="subtitle-txt">Sign up with...</h3>
+                    </div>
+                    <div class="social-networks">
+                        <div class="signup-with-facebook social-network">
+                            <button class="social-btn facebook">
+                                <div class="logo">
+                                    <img src="./static/images/signup/facebook.svg" alt="facebook-logo" class="facebook-logo" />
+                                </div>
+                                <div class="content">
+                                    <h4 class="btn-txt">Sign up with Facebook</h4>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="signup-with-google social-network">
+                            <button class="social-btn google">
+                                <div class="logo">
+                                    <img src="./static/images/signup/google.svg" alt="google-logo" class="google-logo" />
+                                </div>
+                                <div class="content">
+                                    <h4 class="btn-txt">Sign up with Google</h4>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="signup-with-apple social-network">
+                            <button class="social-btn apple">
+                                <div class="logo">
+                                    <img src="./static/images/signup/apple.svg" alt="apple-logo" class="apple-logo" />
+                                </div>
+                                <div class="content">
+                                    <h4 class="btn-txt">Sign up with Apple</h4>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <p class="description">Already have an account? Please <a href="#" class="link-to-login">Log in.</a></p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="./static/script/signup.js"></script>
     <!-- https://www.figma.com/file/WHkhi2DxMaTpUQ5sMj03Vd/Marico_Web_Design?node-id=0%3A1&t=KSpzyzEVlOMFRqBk-0 -->
     <!-- https://www.figma.com/file/H7TSdtCfkX7joUAwMsA6zb/Tech-Online-Store-Design-(Community)-(Community)?node-id=0%3A1&t=f99ZmhjsUAtlgo1C-0 -->
 </body>

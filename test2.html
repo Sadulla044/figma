@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fuck test</title>
+
+    <style>
+        .container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: end;
+            flex-direction: column-reverse;
+            position: relative;
+            width: 100vw;
+            border: 1px solid red;
+            /* margin: 1em 0; */
+            padding: 0;
+            background-image: url(./static/images/Screenshot\ from\ 2023-01-13\ 20-06-10.png);
+            background-clip: content-box;
+            background-origin: content-box;
+        }
+
+        .box {
+            /* position: absolute; */
+            width: 100%;
+            height: 100px;
+            transition: all 0.4s ease;
+        }
+
+        .box:hover .container {
+            padding-top: 0;
+        }
+
+        .box:hover {
+            height: 55rem;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
